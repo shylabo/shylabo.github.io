@@ -51,150 +51,147 @@ a {
 /* ==============================
   Layouts
 ============================== */
-/* Desktop */
-@media (min-width: 376px) {
-  /* Layout */
-  .grid-container {
-    width: 100vw;
-    height: 100vh;
+/* Layout */
+.grid-container {
+  width: 100vw;
+  height: 100vh;
 
-    display: grid;
-    grid-template-rows: 60px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(0px, auto);
-    grid-template-areas:
-      'hd hd hd hd hd hd'
-      'sb mn mn mn mn mn'
-      'sb mn mn mn mn mn';
-  }
+  display: grid;
+  grid-template-rows: 60px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(0px, auto);
+  grid-template-areas:
+    'hd hd hd hd hd hd'
+    'sb mn mn mn mn mn'
+    'sb mn mn mn mn mn';
+}
 
-  /* Header */
-  .header {
-    grid-area: hd;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+/* Header */
+.header {
+  grid-area: hd;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .header-logo {
-    padding-left: 1em;
-    width: 100px;
-    height: auto;
-  }
+.header-logo {
+  padding-left: 1em;
+  width: 100px;
+  height: auto;
+}
 
-  .header-profile-icon {
-    padding: 1em;
-    width: 2em;
-    height: auto;
-    border-radius: 50px;
-  }
+.header-profile-icon {
+  padding: 1em;
+  width: 2em;
+  height: auto;
+  border-radius: 50px;
+}
 
-  /* Sidebar */
-  .sidebar {
-    grid-area: sb;
-    overflow: scroll;
-    background-color: var(--base-background);
-  }
+/* Sidebar */
+.sidebar {
+  grid-area: sb;
+  overflow: scroll;
+  background-color: var(--base-background);
+}
 
-  .sidebar-item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    padding: 1em;
-  }
+.sidebar-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 1em;
+}
 
-  .sidebar-item:hover {
-    background-color: var(--menu-background);
-    cursor: pointer;
-  }
+.sidebar-item:hover {
+  background-color: var(--menu-background);
+  cursor: pointer;
+}
 
-  /* Main */
-  .main {
-    grid-area: mn;
-    overflow: scroll;
-  }
+/* Main */
+.main {
+  grid-area: mn;
+  overflow: scroll;
+}
 
-  .section-container {
-    padding: 2rem;
-  }
+.section-container {
+  padding: 2rem;
+}
 
-  /* Profile */
-  .profile h1 {
-    padding: 2rem 0 1rem;
-  }
+/* Profile */
+.profile h1 {
+  padding: 2rem 0 1rem;
+}
 
-  .profile-description {
-    width: 80%;
-    line-height: 1.5rem;
-  }
+.profile-description {
+  width: 80%;
+  line-height: 1.5rem;
+}
 
-  /* List */
-  .list-items {
-    display: flex;
-    flex-wrap: wrap;
-  }
+/* List */
+.list-items {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .list-item {
-    margin: 1rem;
-    min-height: 15em;
-    cursor: pointer;
-  }
+.list-item {
+  margin: 1rem;
+  min-height: 15em;
+  cursor: pointer;
+}
 
-  .list-item img {
-    border-radius: 10px;
-  }
+.list-item img {
+  border-radius: 10px;
+}
 
-  .list-item-bio {
-    display: flex;
-    align-items: center;
-    padding-top: 1em;
-  }
+.list-item-bio {
+  display: flex;
+  align-items: center;
+  padding-top: 1em;
+}
 
-  .list-item-bio img {
-    border-radius: 999px;
-    width: 40px;
-    height: 40px;
-  }
+.list-item-bio img {
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+}
 
-  .list-item-bio-texts {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3em;
-    padding-left: 1rem;
-  }
+.list-item-bio-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  padding-left: 1rem;
+}
 
-  .list-genre {
-    color: var(--text-secondary);
-  }
+.list-genre {
+  color: var(--text-secondary);
+}
 
-  /* Form */
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-top: 3rem;
-  }
+/* Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
 
-  .form-input {
-    padding: 0.5em;
-    border: none;
-    border-radius: 5px;
-    width: 40%;
-  }
+.form-input {
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  width: 40%;
+}
 
-  .form-input-button {
-    width: 6em;
-    color: var(--text-primary);
-    background-color: var(--call-to-action);
-    cursor: pointer;
-  }
+.form-input-button {
+  width: 6em;
+  color: var(--text-primary);
+  background-color: var(--call-to-action);
+  cursor: pointer;
+}
 
-  #message {
-    height: 30em;
-    width: 80%;
-  }
+#message {
+  height: 30em;
+  width: 80%;
 }
